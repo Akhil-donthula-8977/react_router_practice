@@ -1,0 +1,39 @@
+protected routes
+nested routes
+
+
+
+==========
+MPA v/s SPA
+
+multipage apps(MPA):
+-the html pages are send from server to clint
+
+===================================================================
+//{BrowserRouter} under the hood is contextprovider 
+->it provides context to all of its children components
+-> 'Route' component is part of url (/home , /about)
+->hi.com/blog/blog-1 -->nested route
+==>>with browserRouter we gte tools to control router dom
+===================================================================
+===================================================================
+
+//=>"Route"
+-> <Route path="/home" element={<h1>hello</h1>}/> //renders the element when path is in url tab
+      <Route path="/home" element={<h1>hello home route</h1>}/>
+          <Route path="/about" element={<About></About>}/>
+          <Route path="/" element={<App/>}/>    
+          
+
+===================================================================
+===================================================================
+
+//==> "LINK "  --it is like "a" tag with no refresh and no new page
+
+->react is all about page refresh so if page refresh happens then all the data will be vanished so while changing route it should not refresh the page so here comes the react router into play
+
+->acnhor tag can be used but it refresh the page 
+so link comes into play
+
+===================================================================
+===================================================================
